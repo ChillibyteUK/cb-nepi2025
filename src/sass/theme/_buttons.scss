@@ -1,0 +1,15 @@
+.button {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: var(--fw-600);
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.button-primary {
+    background-color: var(--col-blue-400);
+    color: var(--col-light);
+    &:hover {
+        background-color: var(--col-blue-100);
+        color: var(--col-dark);
+    }
+}

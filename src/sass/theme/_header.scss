@@ -1,0 +1,86 @@
+header {
+    background-color: white;
+    transition: var(--transition);
+
+    .navbar {
+        border-bottom: 1px solid hsla(0 0% 80% / 1);
+    }
+
+    a.nav-link {
+        color: var(--col-dark);
+        font-size: var(--fs-400);
+        transition: var(--transition);
+        @media (min-width:992px) {
+            &:hover {
+                color: var(--col-grey-400);
+            }
+        }
+    }
+
+    .logo {
+        background-image: url(../img/nepi-logo.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        aspect-ratio:  2.76 / 1; // 344 / 126 = 172 / 63
+        width: 340px;
+        max-width: 100%;
+        transition: width var(--transition);
+    }
+
+    &.hide {
+        transform: translateY(-10px);
+        .logo {
+            width: 150px;
+        }
+    }
+
+
+    .top-nav {
+        &__call, &__email {
+            display: none;
+            a {
+                font-size: var(--fs-700);
+                font-weight: var(--fw-900);
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media (min-width:992px) {
+        .nav-top {
+            display: grid !important;
+            justify-content: normal !important;
+            justify-items: center;
+            row-gap: 0.75rem;
+        }
+        .top-nav {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            justify-items: center;
+            &__call {
+                display: block;
+            }
+            &__email {
+                display: block;
+            }
+        }
+    }
+
+    .navbar-nav {
+        text-transform: uppercase;
+        font-weight: var(--fw-600);
+    }
+
+    .menu-item {
+        border-bottom: 4px solid transparent;
+    }
+    .current-menu-item {
+        font-weight: var(--fw-900);
+        border-bottom: 4px solid var(--col-blue-400);
+    }
+
+}

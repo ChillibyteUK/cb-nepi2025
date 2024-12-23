@@ -1,0 +1,20 @@
+footer {
+    background-color: var(--col-blue-100);
+    .footer__menu {
+        ul {
+            padding-inline-start: 0;
+        }
+        li {
+            list-style: none;
+        }
+    }
+    a {
+        color: var(--col-dark);
+        text-decoration: none;
+    }
+}
+.colophon {
+    background-color: var(--col-grey-900);
+    font-size: var(--fs-300);
+    color: var(--col-light);
+}
