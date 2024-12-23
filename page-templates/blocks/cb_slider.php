@@ -3,7 +3,7 @@
         <?php
         if (get_field('title') ?? null) {
         ?>
-            <h2><?= get_field('title') ?></h2>
+            <h2 class="text-center mb-4"><?= get_field('title') ?></h2>
         <?php
         }
         ?>
@@ -13,7 +13,7 @@
                     <?php
                     foreach (get_field('logos') as $logo) {
                     ?>
-                        <li class="splide__slide">$logo</li>
+                        <li class="splide__slide"><?= wp_get_attachment_image($logo, 'large', false) ?></li>
                     <?php
                     }
                     ?>
@@ -34,6 +34,7 @@ add_action('wp_footer', function () {
             new Splide('#slider', {
                 type: 'loop', // Loop mode for infinite scrolling
                 perPage: 5, // Default to 5 slides on desktop
+                arrows: false, // Hide navigation arrows
                 breakpoints: {
                     1024: {
                         perPage: 3
