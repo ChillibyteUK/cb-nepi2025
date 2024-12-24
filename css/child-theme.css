@@ -21722,6 +21722,9 @@ footer a {
 }
 .colophon .cb {
   content: url(../img/cb.png);
+  width: 33px;
+  height: 16px;
+  display: block;
   transition: all 0.2s ease-in;
 }
 .colophon .cb:hover {
