@@ -29,7 +29,7 @@ defined('ABSPATH') || exit;
             <div class="col-md-8">
                 &copy; <?= date('Y') ?> NEPI
             </div>
-            <div class="col-md-4 d-flex justify-content-end">
+            <div class="col-md-4 d-flex align-items-center justify-content-end">
                 <a href="https://www.chillibyte.co.uk/" rel="nofollow noopener" target="_blank" class="cb"
                 title="Digital Marketing by Chillibyte"></a>
             </div>
