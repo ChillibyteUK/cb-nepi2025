@@ -21694,7 +21694,8 @@ header .navbar-nav {
 header .menu-item {
   border-bottom: 4px solid transparent;
 }
-header .current-menu-item {
+header .current-menu-item,
+header .current-page-ancestor {
   font-weight: var(--fw-900);
   border-bottom: 4px solid var(--col-blue-400);
 }

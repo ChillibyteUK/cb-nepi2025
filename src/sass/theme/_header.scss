@@ -78,7 +78,8 @@ header {
     .menu-item {
         border-bottom: 4px solid transparent;
     }
-    .current-menu-item {
+    .current-menu-item,
+    .current-page-ancestor {
         font-weight: var(--fw-900);
         border-bottom: 4px solid var(--col-blue-400);
     }
