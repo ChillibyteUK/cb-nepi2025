@@ -17,4 +17,12 @@ footer {
     background-color: var(--col-grey-900);
     font-size: var(--fs-300);
     color: var(--col-light);
+
+    .cb {
+        content: url(../img/cb.png);
+        transition: all .2s ease-in;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }

@@ -21720,6 +21720,13 @@ footer a {
   font-size: var(--fs-300);
   color: var(--col-light);
 }
+.colophon .cb {
+  content: url(../img/cb.png);
+  transition: all 0.2s ease-in;
+}
+.colophon .cb:hover {
+  opacity: 0.8;
+}
 
 .hero {
   padding-top: var(--h-top-desktop);

@@ -30,6 +30,8 @@ defined('ABSPATH') || exit;
                 &copy; <?= date('Y') ?> NEPI
             </div>
             <div class="col-md-4 text-end">
+                <a href="https://www.chillibyte.co.uk/" rel="nofollow noopener" target="_blank" class="cb"
+                title="Digital Marketing by Chillibyte"></a>
             </div>
         </div>
     </div>
