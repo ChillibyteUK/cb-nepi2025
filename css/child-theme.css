@@ -21828,6 +21828,11 @@ a {
   object-fit: cover;
 }
 
+.wp-block-group.rounded-2 img {
+  border-top-left-radius: var(--bs-border-radius);
+  border-top-right-radius: var(--bs-border-radius);
+}
+
 /*
 var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
 for (; i < all.length; i++) {
