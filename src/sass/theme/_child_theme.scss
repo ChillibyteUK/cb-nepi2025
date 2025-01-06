@@ -45,6 +45,14 @@ a {
     transition: color var(--transition);
 }
 
+.img-16x9 {
+    img {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 // show stuff that overflows horizontally
 // * {
 //     outline: 1px solid #f00 !important;
