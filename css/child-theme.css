@@ -21562,6 +21562,14 @@ small, .small, .has-small-font-size, .fs-300 {
   font-weight: var(--fw-400);
 }
 
+.fw-600 {
+  font-weight: var(--fw-600);
+}
+
+.fw-900 {
+  font-weight: var(--fw-900);
+}
+
 strong, .fw-bold, .fw-600 {
   font-weight: var(--fw-600);
 }
@@ -21765,6 +21773,14 @@ footer a {
   background-color: white;
   opacity: 0.7;
   z-index: -1;
+}
+
+.four_cols__icon {
+  display: block;
+  width: 150px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 @media (min-width: 992px) {

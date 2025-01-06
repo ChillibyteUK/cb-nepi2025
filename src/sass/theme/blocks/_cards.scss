@@ -1,0 +1,8 @@
+.four_cols {
+    &__icon {
+        display: block;
+        width: 150px;
+        aspect-ratio: 1;
+        object-fit: contain;
+    }
+}

@@ -30,6 +30,15 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
         acf_register_block_type(array(
+            'name'                => 'cb_number_icon_cols',
+            'title'                => __('CB Numbered Icon Columns'),
+            'category'            => 'layout',
+            'icon'                => 'cover-image',
+            'render_template'    => 'page-templates/blocks/cb_number_icon_cols.php',
+            'mode'    => 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
             'name'                => 'cb_slider',
             'title'                => __('CB Slider'),
             'category'            => 'layout',
