@@ -1,5 +1,5 @@
 <?php
-$url = get_field('youtube_url');
+$url = get_field('youtube_id');
 ?>
 <section class="youtube py-5">
     <div class="container-xl">
