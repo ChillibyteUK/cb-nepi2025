@@ -1,6 +1,6 @@
 <section class="contact">
     <div class="container-xl">
-        <div class="w-md-75 w-xl-50 mx-auto py-5">
+        <div class="w-md-75 mx-auto py-5">
             <h2 class="text-center mb-4">Contact Us</h2>
             <div class="row g-4">
                 <div class="col-md-6">
