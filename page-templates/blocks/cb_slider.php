@@ -1,9 +1,9 @@
-<section class="slider py-5">
+<section class="slider pb-5">
     <div class="container-xl">
         <?php
-        if (get_field('title') ?? null) {
+        if (get_field('title', 'option') ?? null) {
         ?>
-            <h2 class="text-center mb-4"><?= get_field('title') ?></h2>
+            <h2 class="text-center mb-4"><?= get_field('title', 'option') ?></h2>
         <?php
         }
         ?>
@@ -11,7 +11,7 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <?php
-                    foreach (get_field('logos') as $logo) {
+                    foreach (get_field('logos', 'option') as $logo) {
                     ?>
                         <li class="splide__slide"><?= wp_get_attachment_image($logo, 'large', false) ?></li>
                     <?php

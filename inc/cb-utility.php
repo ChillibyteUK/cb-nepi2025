@@ -524,3 +524,22 @@ function register_page_list_shortcode()
     return ob_get_clean();
 }
 add_shortcode('page_list', 'register_page_list_shortcode');
+
+function disable_dashboard_widgets()
+{
+    // Remove default dashboard widgets
+    remove_meta_box('dashboard_right_now', 'dashboard', 'normal'); // At a Glance
+    remove_meta_box('dashboard_activity', 'dashboard', 'normal'); // Activity
+    remove_meta_box('dashboard_quick_press', 'dashboard', 'side'); // Quick Draft
+    remove_meta_box('dashboard_primary', 'dashboard', 'side'); // WordPress Events and News
+    remove_meta_box('welcome_panel', 'dashboard', 'normal'); // Welcome Panel
+
+    // Remove Yoast SEO widgets
+    remove_meta_box('wpseo-dashboard-overview', 'dashboard', 'normal'); // Yoast SEO Posts Overview
+    remove_meta_box('wpseo-wincher-dashboard-overview', 'dashboard', 'normal'); // Yoast SEO / Wincher: Top Keyphrases
+
+}
+add_action('wp_dashboard_setup', 'disable_dashboard_widgets', 99);
+
+// Disable Welcome Panel programmatically
+remove_action('welcome_panel', 'wp_welcome_panel');

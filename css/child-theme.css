@@ -9,6 +9,8 @@
   --col-grey-400: #828588;
   --hsl-blue-400: 194 85% 61%;
   --col-blue-400: hsl(var(--hsl-blue-400));
+  --hsl-blue-200: 194 84% 75%;
+  --col-blue-200: hsl(var(--hsl-blue-200));
   --hsl-blue-100: 194 84% 90%;
   --col-blue-100: hsl(var(--hsl-blue-100));
   /* Font Sizes */
@@ -21609,6 +21611,7 @@ strong, .fw-bold, .fw-600 {
 }
 
 .button {
+  display: inline-block;
   padding: 1rem 2rem;
   text-decoration: none;
   font-weight: var(--fw-600);
@@ -21620,7 +21623,7 @@ strong, .fw-bold, .fw-600 {
   color: var(--col-light);
 }
 .button-primary:hover {
-  background-color: var(--col-blue-100);
+  background-color: var(--col-blue-200);
   color: var(--col-dark);
 }
 

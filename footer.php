@@ -1,6 +1,11 @@
 <?php
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
+
+if (!is_page('contact-us')) {
+    include get_stylesheet_directory() . '/page-templates/blocks/cb_contact.php';
+}
+include get_stylesheet_directory() . '/page-templates/blocks/cb_slider.php';
 ?>
 <div id="footer-top"></div>
 <footer class="footer pt-5">
@@ -31,7 +36,7 @@ defined('ABSPATH') || exit;
             </div>
             <div class="col-md-4 d-flex align-items-center justify-content-end">
                 <a href="https://www.chillibyte.co.uk/" rel="nofollow noopener" target="_blank" class="cb"
-                title="Digital Marketing by Chillibyte"></a>
+                    title="Digital Marketing by Chillibyte"></a>
             </div>
         </div>
     </div>
